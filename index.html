@@ -537,8 +537,6 @@ function screenIntro(){
 }
 
 function screenInstr(){
-  var warn = '<p class="center warning">⚠️ Ten link dotyczy czytania słów. Kontynuuj zgodnie z instrukcją.</p>';
-  
   var keyboardInstr = 
     '<div class="center" style="margin:16px 0">'+
       '<span class="keypill"><span class="k">C</span>CZERWONY</span>'+
@@ -554,11 +552,10 @@ function screenInstr(){
   
   app.innerHTML =
     '<div class="instr-card">'+
-      '<h3 class="center">Instrukcja — CZYTANIE SŁÓW</h3>'+ 
-      warn +
       '<p class="center error-text" style="font-size:20px;">⚠️ CZYTAJ SŁOWA, ignoruj kolor atramentu!</p>'+
-      '<p class="center">Twoim zadaniem jest jak najszybsze <strong>PRZECZYTANIE SŁOWA</strong> i naciśnięcie odpowiedniego klawisza.</p>'+
+      '<p class="center">Twoim zadaniem jest jak najszybsze <strong>przeczytanie słowa</strong>.</p>'+
       keyboardInstr +
+      '<p class="center">Jeśli się pomylisz, naciśnij właściwy klawisz.</p>'+
       touchInstr +
       '<div class="center" style="margin-top:20px">'+
         '<button class="btn" id="startExp">Zaczynam</button>'+
